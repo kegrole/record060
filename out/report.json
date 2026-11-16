@@ -1,0 +1,170 @@
+{
+  "final_watermark": "2026-01-01T00:00:26Z",
+  "emitted": 13,
+  "dropped_late": 2,
+  "late_accepted": 3,
+  "input_events": 15,
+  "output": [
+    {
+      "event_time": "2026-01-01T00:00:00Z",
+      "processing_time": "2026-01-01T00:01:40Z",
+      "source": "alpha",
+      "id": "evt-001",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": null
+    },
+    {
+      "event_time": "2026-01-01T00:00:10Z",
+      "processing_time": "2026-01-01T00:01:41Z",
+      "source": "beta",
+      "id": "evt-002",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": null
+    },
+    {
+      "event_time": "2026-01-01T00:00:13Z",
+      "processing_time": "2026-01-01T00:01:48Z",
+      "source": "alpha",
+      "id": "evt-009",
+      "late": true,
+      "decision": "late_accepted",
+      "watermark_at_decision": "2026-01-01T00:00:18Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:16Z",
+      "processing_time": "2026-01-01T00:01:42Z",
+      "source": "gamma",
+      "id": "evt-003",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2025-12-31T23:59:58Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:17Z",
+      "processing_time": "2026-01-01T00:01:46Z",
+      "source": "beta",
+      "id": "evt-007",
+      "late": true,
+      "decision": "late_accepted",
+      "watermark_at_decision": "2026-01-01T00:00:18Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:20Z",
+      "processing_time": "2026-01-01T00:01:43Z",
+      "source": "alpha",
+      "id": "evt-004",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:06Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:22Z",
+      "processing_time": "2026-01-01T00:01:53Z",
+      "source": "alpha",
+      "id": "evt-014",
+      "late": true,
+      "decision": "late_accepted",
+      "watermark_at_decision": "2026-01-01T00:00:26Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:24Z",
+      "processing_time": "2026-01-01T00:01:44Z",
+      "source": "beta",
+      "id": "evt-005",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:10Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:26Z",
+      "processing_time": "2026-01-01T00:01:45Z",
+      "source": "gamma",
+      "id": "evt-006",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:18Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:30Z",
+      "processing_time": "2026-01-01T00:01:49Z",
+      "source": "alpha",
+      "id": "evt-010",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:20Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:30Z",
+      "processing_time": "2026-01-01T00:01:50Z",
+      "source": "beta",
+      "id": "evt-011",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:20Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:30Z",
+      "processing_time": "2026-01-01T00:01:52Z",
+      "source": "beta",
+      "id": "evt-013",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:26Z"
+    },
+    {
+      "event_time": "2026-01-01T00:00:34Z",
+      "processing_time": "2026-01-01T00:01:51Z",
+      "source": "gamma",
+      "id": "evt-012",
+      "late": false,
+      "decision": "on_time",
+      "watermark_at_decision": "2026-01-01T00:00:26Z"
+    }
+  ],
+  "dropped": [
+    {
+      "event": {
+        "event_time": "2026-01-01T00:00:12Z",
+        "processing_time": "2026-01-01T00:01:47Z",
+        "source": "gamma",
+        "id": "evt-008"
+      },
+      "accepted": false,
+      "late": true,
+      "decision": "late_dropped",
+      "watermark_at_decision": "2026-01-01T00:00:18Z",
+      "drop_threshold": "2026-01-01T00:00:13Z"
+    },
+    {
+      "event": {
+        "event_time": "2026-01-01T00:00:20Z",
+        "processing_time": "2026-01-01T00:01:54Z",
+        "source": "gamma",
+        "id": "evt-015"
+      },
+      "accepted": false,
+      "late": true,
+      "decision": "late_dropped",
+      "watermark_at_decision": "2026-01-01T00:00:26Z",
+      "drop_threshold": "2026-01-01T00:00:21Z"
+    }
+  ],
+  "watermark_history": [
+    "2025-12-31T23:59:58Z",
+    "2026-01-01T00:00:06Z",
+    "2026-01-01T00:00:10Z",
+    "2026-01-01T00:00:18Z",
+    "2026-01-01T00:00:18Z",
+    "2026-01-01T00:00:18Z",
+    "2026-01-01T00:00:18Z",
+    "2026-01-01T00:00:20Z",
+    "2026-01-01T00:00:20Z",
+    "2026-01-01T00:00:26Z",
+    "2026-01-01T00:00:26Z",
+    "2026-01-01T00:00:26Z",
+    "2026-01-01T00:00:26Z"
+  ],
+  "allowed_lateness": "5s"
+}
